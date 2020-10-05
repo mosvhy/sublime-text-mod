@@ -1,0 +1,4 @@
+{
+  "cmd": ["C:\\msys64\\usr\\bin\\bash.exe","$file"],
+  "selector": ["source.bash","source.sh"],
+}

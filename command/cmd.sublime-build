@@ -1,0 +1,5 @@
+{
+    "cmd": ["cmd", "$file"],
+    "selector": ["source.cmd","source.bat"],
+    "file_regex": "^\\s*File \"(...*?)\", line ([0-9]*)"
+}

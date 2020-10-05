@@ -1,0 +1,32 @@
+%YAML 1.2
+---
+# http://www.sublimetext.com/docs/3/syntax.html
+name : Sequencediagram
+file_extensions :
+  - seqdiag
+scope : source.seqdiag
+contexts :
+  main:
+    - match: ""
+      push: "Packages/Sequencediagram/Sequencediagram.sublime-syntax"
+      with_prototype:
+        - match: ""
+          push: expr
+
+  expr:
+    - match: \b(title|actor|participant|end)\b
+      scope: keyword
+    - match: \b(^s+)?(activate|deactivate)\b
+      scope: keyword
+    # - match: 'activate'
+    #   scope: punctuation.section.group.begin
+    # - match: 'deactivate'
+    #   scope: punctuation.section.group.end
+    - match: ' as '
+      scope: string.format
+    - match: \b(-->|->|>|<|<-|<--|-->>|->>|>>|<<|<<-|<<--)\b
+      scope: entity.name
+    - match: \\n
+      scope: constant.character.escape
+    - match: \<\<.*?\>\>
+      scope: storage.type

@@ -1,0 +1,9 @@
+<snippet>
+  <content><![CDATA[
+activate 
+  $SELECTION
+  $TM_CURRENT_LINE
+deactivate
+]]></content>
+  <tabTrigger>act</tabTrigger>
+</snippet>

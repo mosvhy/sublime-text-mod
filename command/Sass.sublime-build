@@ -1,0 +1,5 @@
+{
+    "cmd": ["sass.cmd", "$file", ">", "$file.css"],
+    "selector": ["source.sass","source.scss"],
+    "file_regex": "^\\s*File \"(...*?)\", line ([0-9]*)"
+}
